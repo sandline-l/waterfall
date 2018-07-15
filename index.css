@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+
+}
+.warpper{
+    width: 100%;
+}
+ul{
+    width: 880px;
+    margin: 0 auto;
+}
+/* 清除浮动对ul的影响 */
+ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ul li{
+    width: 220px;
+    float: left;
+    /* overflow: hidden; */
+}
+ul li div{
+    width: 200px;
+    margin: 0 auto 5px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 4px;
+}
+ul li div img{
+    width: 100%;
+}
+
